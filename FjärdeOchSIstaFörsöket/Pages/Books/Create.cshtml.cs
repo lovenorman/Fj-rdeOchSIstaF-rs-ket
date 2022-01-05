@@ -42,7 +42,6 @@ namespace FjärdeOchSIstaFörsöket.Pages.Books
                 return Page();
             }
 
-            //Connects the author with a book.
             var author = _context.Authors.First(x => x.Id == AuthorId);
             Book.Author = author;
 
